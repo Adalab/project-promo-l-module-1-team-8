@@ -1,0 +1,44 @@
+/*HEADER*/
+.page {
+  flex-wrap: wrap;
+}
+.header {
+  background-color: #099d8d;
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+  margin-top: 15px;
+  flex-grow: 1;
+}
+
+.nav {
+  display: block;
+}
+.link {
+  color: white;
+  text-decoration: none;
+  line-height: 2;
+}
+
+/*HERO*/
+.hero {
+  background-color: #14d9c4;
+  height: 550px;
+}
+
+/*MAIN*/
+
+/* .main {
+    margin-top: 60px;
+  background-color: #14d9c4;
+  position: relative;
+}*/
