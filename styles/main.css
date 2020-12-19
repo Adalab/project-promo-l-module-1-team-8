@@ -1,44 +1,140 @@
 /*HEADER*/
 .page {
-  flex-wrap: wrap;
+  margin: 0;
+  box-sizing: border-box;
+  /*flex-wrap: wrap;*/
 }
 .header {
-  background-color: #099d8d;
-  padding: 15px 20px;
+  width: 320px;
+  height: 60px;
+  opacity: 0.95;
+  align-content: center;
   position: fixed;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  top: 0;
-  left: 0;
 }
-
-.list {
-  display: flex;
-  list-style-type: none;
-  margin-top: 15px;
-  flex-grow: 1;
+.headerName {
+  width: 160px;
+  padding: 8px 17px 7px 16px;
+  opacity: 0.95;
+  background-color: #099d8d;
+}
+.logo-header {
+  height: 30px;
+  align-items: center;
+  display: block;
+  opacity: 0.95;
+  background-color: #099d8d;
+  padding: 15px 80px;
 }
 
 .nav {
-  display: block;
+  width: 320px;
+  height: 45px;
+  opacity: 0.9;
+  justify-items: center;
 }
+
+.list {
+  width: 320px;
+  height: 45px;
+  margin: 0;
+  opacity: 0.9;
+  display: flex;
+  list-style-type: none;
+  background-color: #14d9c4;
+  padding: 8px 17px 7px 16px;
+  box-sizing: border-box;
+}
+
 .link {
-  color: white;
   text-decoration: none;
+  width: 320px;
+}
+
+.link-team {
+  width: 56px;
+  height: 30px;
+  font-family: "Rubik";
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
   line-height: 2;
+  letter-spacing: normal;
+  color: white;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.link-about {
+  width: 121px;
+  height: 30px;
+  margin: 0 15px;
+  font-family: "Rubik";
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: white;
+  display: flex;
+}
+
+.link-contact {
+  width: 80px;
+  height: 30px;
+  font-family: "Rubik";
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: white;
+  display: flex;
+}
+
+.link:hover {
+  background-color: #14d9c4;
+  opacity: 0.9;
+  color: white;
 }
 
 /*HERO*/
 .hero {
-  background-color: #14d9c4;
-  height: 550px;
+  width: 320px;
+  height: 421px;
+  margin: 0 0 46px;
+  padding: 0 0 316px;
+  box-sizing: border-box;
+  display: block;
 }
 
-/*MAIN*/
+.hero-picture {
+  width: 100vw;
+  margin-top: 110px;
+}
 
-/* .main {
-    margin-top: 60px;
-  background-color: #14d9c4;
+.hero-motto {
+  width: 290px;
+  height: 80px;
+  padding: 14px 15px 16px;
   position: relative;
-}*/
+  top: -30px;
+  /*EL BACKGROUND DEBE SER BLANCO PERO HE PUESTO VERDE PARA VER EL MARGEN*/
+  background-color: rgb(4, 190, 159);
+}
+.mottoText {
+  width: 260px;
+  font-family: "OpenSans-Semibold";
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  color: black;
+  box-sizing: border-box;
+  background-color: white;
+  text-align: center;
+}
