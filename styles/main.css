@@ -21,18 +21,13 @@ time, mark, audio, video {
 }
 
 /*GOOGLE FONTS*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Rubik:wght@500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 /*VARIABLES*/
 
 :root {
-  --openSans: (
-    "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap"
-  );
-  --rubikMedium: (
-    "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Rubik:wght@500&display=swap"
-  );
+  --openSans: 'Open Sans', sans-serif;
+  --rubikMedium: 'Rubik', sans-serif;
   --corporate-color: #099d8d;
   --colorFooter: #ffffff;
   --background-color: #ffffff;
@@ -77,11 +72,13 @@ time, mark, audio, video {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
+
 .footer-copy {
   width: 172px;
   height: 20px;
-  margin: 0 0 20px;
+  margin: 0;
   font-family: var(--openSans);
   font-size: 14px;
   font-weight: normal;
@@ -93,6 +90,7 @@ time, mark, audio, video {
   color: #b8b8b9;
   justify-content: center;
 }
+
 .footer-menu {
   width: 114px;
   height: 60px;
@@ -102,7 +100,7 @@ time, mark, audio, video {
   font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
-  font-style: normal;
+  font-style:normal;
   line-height: 1.43;
   letter-spacing: normal;
   text-align: center;
@@ -110,27 +108,30 @@ time, mark, audio, video {
   list-style-type: none;
   display: inline;
 }
-.footer-team, .footer-about, .footer-contact {
+
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-link-item {
   padding: 3px;
 }
-.footer-team:hover,.footer-about:hover, .footer-contact:hover {
+
+.footer-link-item:hover {
   background: var(--corporate-color);
   color: #ffffff;
   transform: scale(1.03);
   transition: 0.3s;
 }
 
-.link-team, .link-about, .link-contact{
-  text-decoration: none;
-  color: inherit;
-}
-
 .logo-adalab {
   width: 115.9px;
   height: 45px;
-  margin: 30px 28.1px 0 28px;
+  margin: auto;
 }
+
 .logo-adalab:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition: 0.9s;
 }
