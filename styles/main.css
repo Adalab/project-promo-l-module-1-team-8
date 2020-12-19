@@ -69,12 +69,15 @@ time, mark, audio, video {
 .footer {
   width: 320px;
   height: 250px;
-  margin: 2225px 0 0;
+  margin: auto;
   padding: 30px 74px 45px;
   border: solid 1px #b8b8b9;
   background-color: var(--colorFooter);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .footer-copy {
   width: 172px;
   height: 20px;
@@ -88,19 +91,8 @@ time, mark, audio, video {
   letter-spacing: normal;
   text-align: center;
   color: #b8b8b9;
+  justify-content: center;
 }
-
-.logo-adalab {
-  width: 115.9px;
-  height: 45px;
-  margin: 30px 28.1px 0 28px;
-}
-
-.logo-adalab:hover {
-  transform: scale(1.5);
-  transition: 0.9s;
-}
-
 .footer-menu {
   width: 114px;
   height: 60px;
@@ -116,45 +108,29 @@ time, mark, audio, video {
   text-align: center;
   color: #54585a;
   list-style-type: none;
+  display: inline;
 }
-
-.footer-team:hover {
+.footer-team, .footer-about, .footer-contact {
+  padding: 3px;
+}
+.footer-team:hover,.footer-about:hover, .footer-contact:hover {
   background: var(--corporate-color);
   color: #ffffff;
   transform: scale(1.03);
   transition: 0.3s;
 }
 
-.footer-about:hover {
-  background: var(--corporate-color);
-  color: #ffffff;
-  transform: scale(1.03);
-  transition: 0.3s;
-}
-
-.footer-contact:hover {
-  background: var(--corporate-color);
-  color: #ffffff;
-  transform: scale(1.03);
-  transition: 0.3s;
-}
-
-.link-team {
+.link-team, .link-about, .link-contact{
   text-decoration: none;
   color: inherit;
 }
 
-.link-about {
-  text-decoration: none;
-  color: inherit;
+.logo-adalab {
+  width: 115.9px;
+  height: 45px;
+  margin: 30px 28.1px 0 28px;
 }
-
-.link-contact {
-  text-decoration: none;
-  color: inherit;
-}
-
-.up {
-  position: relative;
-  width: 40px;
+.logo-adalab:hover {
+  transform: scale(1.5);
+  transition: 0.9s;
 }
