@@ -1,0 +1,107 @@
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Rubik:wght@500&display=swap');
+
+/*VARIABLES*/
+
+:root {
+    --openSans: ('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+    --rubikMedium: ('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Rubik:wght@500&display=swap');
+    --corporate-color: #099d8d;
+    --colorFooter: #ffffff;
+}
+
+/*FOOTER*/
+
+.footer {
+    width: 320px;
+    height: 250px;
+    margin: 2225px 0 0;
+    padding: 30px 74px 45px;
+    border: solid 1px #b8b8b9;
+    background-color: var(--colorFooter);
+}
+
+.footer-copy {
+    width: 172px;
+    height: 20px;
+    margin: 0 0 20px;
+    font-family: var(--openSans);
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: #b8b8b9;
+}
+
+.logo-adalab {
+    width: 115.9px;
+    height: 45px;
+    margin: 30px 28.1px 0 28px;
+}
+
+.logo-adalab:hover {
+    transform: scale(1.5);
+    transition: 0.9s;
+}
+
+.footer-menu {
+    width: 114px;
+    height: 60px;
+    margin: 20px 29px 30px;
+    opacity: 0.75;
+    font-family: var(--openSans);
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: #54585a;
+    list-style-type: none;
+}
+
+.footer-team:hover {
+    background: var(--corporate-color);
+    color: #FFFFFF;
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.footer-about:hover {
+    background: var(--corporate-color);
+    color: #FFFFFF;
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.footer-contact:hover {
+    background: var(--corporate-color);
+    color: #FFFFFF;
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.link-team {
+     text-decoration: none;
+     color: inherit;
+}
+
+.link-about {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-contact {
+    text-decoration: none;
+    color: inherit;
+}
+
+.up {
+    position: relative;
+    width: 40px;
+}
