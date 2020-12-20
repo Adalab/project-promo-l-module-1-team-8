@@ -1,9 +1,45 @@
+/*RESET STYLE*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, a, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/*GOOGLE FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+/*VARIABLES*/
+
+:root {
+  --openSans: 'Open Sans', sans-serif;
+  --rubikMedium: 'Rubik', sans-serif;
+  --corporate-color: #099d8d;
+  --colorFooter: #ffffff;
+  --background-color: #ffffff;
+}
+
 /*HEADER*/
 .page {
   margin: 0;
   box-sizing: border-box;
   /*flex-wrap: wrap;*/
 }
+
 .header {
   width: 320px;
   height: 60px;
@@ -11,12 +47,14 @@
   align-content: center;
   position: fixed;
 }
+
 .headerName {
   width: 160px;
   padding: 8px 17px 7px 16px;
   opacity: 0.95;
   background-color: #099d8d;
 }
+
 .logo-header {
   height: 30px;
   align-items: center;
@@ -118,6 +156,7 @@
   /*EL BACKGROUND DEBE SER BLANCO PERO HE PUESTO VERDE PARA VER EL MARGEN*/
   background-color: rgb(4, 190, 159);
 }
+
 .mottoText {
   width: 260px;
   font-family: "OpenSans-Semibold";
@@ -132,125 +171,34 @@
   background-color: white;
   text-align: center;
 }
-/*RESET STYLE*/
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-a,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
 
-/*GOOGLE FONTS*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
-/*VARIABLES*/
-
-:root {
-  --openSans: "Open Sans", sans-serif;
-  --rubikMedium: "Rubik", sans-serif;
-  --corporate-color: #099d8d;
-  --colorFooter: #ffffff;
-  --background-color: #ffffff;
-}
 /*SKILLS*/
 .skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: baseline;
-  width: 320px;
-  height: 700px;
-  margin: auto;
-  padding: 30px 15px 45px;
-  background-color: rgba(184, 184, 185, 0.2);
-}
-.titulo-sw {
-  font-family: var(--rubikMedium);
-  font-size: 22px;
-  line-height: 45px;
-  text-align: center;
-  color: var(--corporate-color);
-}
-.p-sw {
-  padding: 15px;
-  font-family: var(--openSans);
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  color: #54585a;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 320px;
+    height: 700px;
+    margin: auto;
+    padding: 30px 15px 45px;
+    background-color: rgba(184, 184, 185, 0.2); 
+  }
+  .titulo-sw {
+    font-family: var(--rubikMedium);
+    font-size: 22px;
+    line-height: 45px;
+    text-align: center;
+    color: var(--corporate-color)
+  }
+  .p-sw {
+    padding: 15px;
+    font-family: var(--openSans); 
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #54585a;
+  }
 /*FOOTER*/
 
 .footer {
@@ -292,7 +240,7 @@ video {
   font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
-  font-style: normal;
+  font-style:normal;
   line-height: 1.43;
   letter-spacing: normal;
   text-align: center;
