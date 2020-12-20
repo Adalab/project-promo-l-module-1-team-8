@@ -34,11 +34,6 @@ time, mark, audio, video {
 }
 
 /*HEADER*/
-.page {
-  margin: 0;
-  box-sizing: border-box;
-  /*flex-wrap: wrap;*/
-}
 
 .header {
   width: 320px;
@@ -46,13 +41,13 @@ time, mark, audio, video {
   opacity: 0.95;
   align-content: center;
   position: fixed;
+  background-color: var(--corporate-color);
 }
 
 .headerName {
   width: 160px;
   padding: 8px 17px 7px 16px;
   opacity: 0.95;
-  background-color: #099d8d;
 }
 
 .logo-header {
@@ -60,7 +55,6 @@ time, mark, audio, video {
   align-items: center;
   display: block;
   opacity: 0.95;
-  background-color: #099d8d;
   padding: 15px 80px;
 }
 
@@ -68,28 +62,26 @@ time, mark, audio, video {
   width: 320px;
   height: 45px;
   opacity: 0.9;
-  justify-items: center;
+  background-color: #14d9c4;
 }
 
 .list {
   width: 320px;
   height: 45px;
-  margin: 0;
+  margin: auto;
   opacity: 0.9;
   display: flex;
   list-style-type: none;
-  background-color: #14d9c4;
   padding: 8px 17px 7px 16px;
   box-sizing: border-box;
+  font-family: var(--rubikMedium);
+  font-size: 15px;
+  line-height: 30px;
+  justify-content: space-around;
 }
 
 .link {
   text-decoration: none;
-  width: 320px;
-}
-
-.link-team {
-  width: 56px;
   height: 30px;
   font-family: "Rubik";
   font-size: 15px;
@@ -101,35 +93,6 @@ time, mark, audio, video {
   color: white;
   display: flex;
   box-sizing: border-box;
-}
-
-.link-about {
-  width: 121px;
-  height: 30px;
-  margin: 0 15px;
-  font-family: "Rubik";
-  font-size: 15px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  color: white;
-  display: flex;
-}
-
-.link-contact {
-  width: 80px;
-  height: 30px;
-  font-family: "Rubik";
-  font-size: 15px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  color: white;
-  display: flex;
 }
 
 /*HERO*/
@@ -143,18 +106,15 @@ time, mark, audio, video {
 }
 
 .hero-picture {
-  width: 100vw;
+  width: 320px;
   margin-top: 110px;
 }
 
 .hero-motto {
   width: 290px;
-  height: 80px;
-  padding: 14px 15px 16px;
   position: relative;
   top: -30px;
-  /*EL BACKGROUND DEBE SER BLANCO PERO HE PUESTO VERDE PARA VER EL MARGEN*/
-  background-color: rgb(4, 190, 159);
+  background-color: var(--background-color); 
 }
 
 .mottoText {
@@ -170,6 +130,40 @@ time, mark, audio, video {
   box-sizing: border-box;
   background-color: white;
   text-align: center;
+  background-color: yellow;
+}
+
+/*EQUIPO*/
+​ .rectangulo {
+  width: 320px;
+  height: 504px;
+  padding: 30px 15px;
+  background-color: #ffffff;
+}
+
+.team-title {
+  width: 100%;
+  text-align: center;
+  flex-grow: 100;
+  background: #ffffff;
+  color: #099d8d;
+  font-weight: 500;
+  font-family: var(--rubikMedium);
+  font-size: 24px;
+}
+
+.team {
+  padding-left: 20px;
+  text-align: center;
+  flex-grow: 100;
+  background: #ffffff;
+  color: #54585a;
+  font-family: var(--openSans);
+  font-size: 16px;
+}
+
+.resaltar {
+  font-weight: bold;
 }
 
 /*SKILLS*/
@@ -198,7 +192,7 @@ time, mark, audio, video {
   .p-sw {
     padding: 15px;
     font-family: var(--openSans); 
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
     text-align: center;
     color: #54585a;
