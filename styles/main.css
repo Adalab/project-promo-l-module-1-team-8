@@ -1,23 +1,81 @@
 /*RESET STYLE*/
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, a, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+a,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 /*GOOGLE FONTS*/
@@ -36,6 +94,7 @@ time, mark, audio, video {
 /*HEADER*/
 
 .header {
+  z-index: 1;
   width: 320px;
   height: 60px;
   opacity: 0.95;
@@ -114,7 +173,7 @@ time, mark, audio, video {
   width: 290px;
   position: relative;
   top: -30px;
-  background-color: var(--background-color); 
+  background-color: var(--background-color);
 }
 
 .mottoText {
@@ -138,28 +197,30 @@ time, mark, audio, video {
   width: 320px;
   height: 504px;
   padding: 30px 15px;
-  background-color: #ffffff;
+  background-color: var(--background-color);
 }
 
 .team-title {
   width: 100%;
   text-align: center;
   flex-grow: 100;
-  background: #ffffff;
-  color: #099d8d;
+  background: var(--background-color);
+  color: var(--corporate-color);
   font-weight: 500;
   font-family: var(--rubikMedium);
   font-size: 24px;
+  line-height: 45px;
 }
 
 .team {
-  padding-left: 20px;
+  padding: 15px 15px 30px 15px;
   text-align: center;
   flex-grow: 100;
-  background: #ffffff;
+  background: var(--background-color);
   color: #54585a;
   font-family: var(--openSans);
   font-size: 16px;
+  line-height: 1.5;
 }
 
 .resaltar {
@@ -168,13 +229,15 @@ time, mark, audio, video {
 
 /*SKILLS*/
 .flipped-square {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    margin: -45px 0 0 0;
-    transform: rotate(45deg);
-    background-color:var(--background-color);
+  
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin: -45px 0 0 0;
+  transform: rotate(45deg);
+  background-color: var(--background-color);
 }
+
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -183,27 +246,35 @@ time, mark, audio, video {
   width: auto;
   padding: 30px 0px 45px;
   background-color: rgba(184, 184, 185, 0.2);
-  }
-  
-  .s-w {
-    width: 320px;
-  }
+}
 
-  .h3-sw {
-    font-family: var(--rubikMedium);
-    font-size: 22px;
-    line-height: 45px;
-    text-align: center;
-    color: var(--corporate-color)
-  }
-  .p-sw {
-    padding: 15px;
-    font-family: var(--openSans); 
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    color: #54585a;
-  }
+.s-w {
+  width: 320px;
+}
+
+.h3-sw {
+  font-family: var(--rubikMedium);
+  font-size: 22px;
+  line-height: 45px;
+  text-align: center;
+  color: var(--corporate-color)
+}
+
+.p-sw {
+  padding: 15px;
+  font-family: var(--openSans);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #54585a;
+}
+
+/* ABOUT US */
+
+.img {
+  width: 206px;
+}
+
 /*FOOTER*/
 
 .footer {
@@ -245,7 +316,7 @@ time, mark, audio, video {
   font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
-  font-style:normal;
+  font-style: normal;
   line-height: 1.43;
   letter-spacing: normal;
   text-align: center;
