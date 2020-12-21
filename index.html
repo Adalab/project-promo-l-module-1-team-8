@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./styles/contact.css">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./icons/fontawesome-free-5.15.1-web/css/all.min.css">
   <title>BEcodeTIFUL</title>
 </head>
 
@@ -13,21 +15,20 @@
   <!-- HEADER-->
   <header class="header">
     <div class="header_headerName">
-      <a href="./index.html" title="Ir a página principal">
-        <img class="logo-header" src="./images/logo-movil.png" alt="BEcodeTIFUL logo" title="BEcodeTIFUL">
-       </a>   
+      <a href="./index.html" title="Ir a página principal"></a>   
+        <img class="logo-header" src="./images/logo-movil.png" alt="BEcodeTIFUL logo">
     </div>
     <div>
       <nav class="nav">
         <ul class="list">
           <li>
-            <a class="link link-team" href="./index.html#team">EQUIPO</a>
+            <a class="link link-team" href="#team">EQUIPO</a>
           </li>
           <li>
-            <a class="link link-about" href="./index.html#about">QUIENES SOMOS</a>
+            <a class="link link-about" href="#about">QUIENES SOMOS</a>
           </li>
           <li>
-            <a class="link link-contact" href="./index.html#contact">CONTACTO</a>
+            <a class="link link-contact" href="./contact.html" target="_blank">CONTACTO</a>
           </li>
         </ul>
       </nav>
@@ -37,21 +38,21 @@
   <section class="hero">
     <img class="hero-picture" src="images/4751532.jpg" />
     <div class="hero-motto">
-      <p id="team" class="mottoText">In code we trust</p>
+      <h2 id="team" class="mottoText">In code we trust</h2>
     </div>
-
+  </section>
+  
+<!-- EQUIPO -->
     <section class="team">
       <h2 class="team-title">EQUIPO</h2>
-      <p>Un sabio dijo, <id class="resaltar">"puedes programar por distintas rutas".</id> Venidas de diversas zonas del
-        planeta y a priori totalmente diferentes, se fueron dando cuenta de que algunos de sus caminos confluían, tomaron
+      <p class="p-team">Un sabio dijo, <id class="resaltar">"puedes programar por distintas rutas".</id> Venidas de diversas zonas del
+        planeta y a priori totalmente diferentes, se fueron dando cuenta de que algunos de sus caminos confluían. Tomaron
         esas convergencias como oportunidades para empezar a desarrollar un sendero binario juntas.</p>
-      <p>Con gran adaptación al cambio, orientación al cliente, trotamundos, multidisciplinarias; son la nueva era de la
+      <p class="p-team"> Con gran adaptación al cambio, orientación al cliente, trotamundos, multidisciplinarias; son la nueva era de la
         programación front - end, mujeres comprometidas con su equipo y proyectos, siempre en busca de la optimización.
       </p>
-
     </section>
-
-
+    
     <!-- SKILLS -->
     <section class="skills">
       <div class="flipped-square"></div>
@@ -74,30 +75,101 @@
     </section>
 
     <!--ABOUT US-->
-    <section class="about-us">
-      <h2>QUIÉNES SOMOS</h2>
+     <section class="about" id="about">
+      <h2 class="h2-about" >QUIÉNES SOMOS</h2>
       
-      <article class="about caro-lili">
-        <img class="img caro" src="" alt="Carolina Castaño">
-        Ha estudiado magisterio, administración y finanzas y enseñanza del español, ha vivido en muchos sitios y trabajado en diferentes sectores pero sigue en busca de una vocación. Viajera de mente abierta, se mueve por inspiración y le cuesta poco el cambio.
+      <article class="about-article caro-lili">
+        <img class="img caro" src="./images/avatar-caro.jpg" alt="Carolina Castaño">
+        <h3 class="names-about">Carolina Castaño</h3>
+        <p class="bio"> Ha estudiado magisterio, administración y finanzas y enseñanza del español, ha vivido en muchos sitios y trabajado en diferentes sectores pero sigue en busca de una vocación. Viajera de mente abierta, se mueve por inspiración y le cuesta poco el cambio.</p>
+          <div class="social-media">
+            <a class="social-media-item" href="https://twitter.com/cvcastano" target="_blank">  
+              <i class="fab fa-twitter"></i>
+            </a>
+            ·
+            <a class="social-media-item" href="https://www.linkedin.com/in/carolina-castano/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            ·
+            <a class="social-media-item" href="https://github.com/cvcastano" target="_blank">
+              <i class="fab fa-github-alt"></i>
+              ·
+            </a>
+            <a class="social-media-item" href="mailto:carocastanocastillo@gmail.com" target="_blank">
+             <i class="fas fa-envelope"></i>
+            </a>
+          </div>
       </article>
-      <article class="about elisa-valle">
 
+      <article class="about-article elisa-valle">
+        <img class="img elisa" src="./images/avatar-elisa.jpg" alt="Elisa Alcocer">
+        <h3 class="names-about">Elisa Alcocer</h3>
+        <p class="bio">Curiosa, creativa, y siempre en busca de nuevos retos. Ahora ha decidido darle un giro a su vida, y meterse de lleno en la programación. Le encanta rodearse de gente positiva, viajar, y descubrir nuevos sabores en la cocina. Es tenaz y perspicaz, siempre busca el máximo nivel en todo lo que se propone. </p>
+          <div class="social-media">
+            <a class="social-media-item" href="https://www.twitter.com" target="_blank">  
+              <i class="fab fa-twitter"></i>
+            </a>
+            ·
+            <a class="social-media-item" href="https://www.linkedin.com/in/elisalcocer/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            ·
+            <a class="social-media-item" href="https://github.com/alcocere" target="_blank">
+              <i class="fab fa-github-alt"></i>
+              ·
+            </a>
+            <a class="social-media-item" href="mailto:elisa.alcocerm@gmail.com" target="_blank">
+             <i class="fas fa-envelope"></i>
+            </a>
+          </div>
       </article >
-      <article class="about caro-lili">
-        <h4>Liliana Mendoza A.</h4>
-        <img class="img liliana" src="" alt="Liliana Mendoza">
-        <p class="reseña">
-          Ingeniera Industrial, experta en RRHH en Colombia y España, con gran capacidad de adaptación, aprendizaje y organización; incursiona en el mundo del front - end, para dar un toque divergente y entablar sinergias, a nivel personal, compatibilizar su vida familiar.
-          </p>
+
+      <article class="about-article caro-lili">
+        <img class="img liliana" src="./images/avatar-lili.jpg" alt="Liliana Mendoza">
+        <h3 class="names-about">Liliana Mendoza A.</h3>
+        <p class="bio">Ingeniera Industrial, experta en RRHH en Colombia y España, con gran capacidad de adaptación, aprendizaje y organización; incursiona en el mundo del front - end, para dar un toque divergente y entablar sinergias, a nivel personal, compatibilizar su vida familiar.</p>
+        <div class="social-media">
+          <a class="social-media-item" href="https://www.twitter.com" target="_blank">  
+            <i class="fab fa-twitter"></i>
+          </a>
+          ·
+          <a class="social-media-item" href="https://www.linkedin.com/in/liliana-mendoza-alvear" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          ·
+          <a class="social-media-item" href="https://github.com/lilymenal" target="_blank">
+            <i class="fab fa-github-alt"></i>
+            ·
+          </a>
+          <a class="social-media-item" href="mailto:liliana.mendoza.alvear@gmail.com" target="_blank">
+           <i class="fas fa-envelope"></i>
+          </a>
+        </div>
       </article>
 
-      <article class="about elisa-valle">
-        <h4>Valle Tendero</h4>
-        <img clas="img valle" src="." alt="Valle Tendero">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque dicta rerum non voluptatibus quam saepe porro quidem totam similique magnam velit odit ratione nesciunt eos veritatis veniam, fuga sunt!</p>
+      <article class="about-article elisa-valle">
+        <img class="img valle" src="./images/avatar-valle.png" alt="Valle Tendero">
+        <h3 class="names-about">Valle Tendero</h3>
+        <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque dicta rerum non voluptatibus quam saepe porro quidem totam similique magnam velit odit ratione nesciunt eos veritatis veniam, fuga sunt!</p>
+          <div class="social-media">
+            <a class="social-media-item" href="https://twitter.com/varaiik" target="_blank">  
+              <i class="fab fa-twitter"></i>
+            </a>
+            ·
+            <a class="social-media-item" href="https://www.linkedin.com/in/valle-tendero/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            ·
+            <a class="social-media-item" href="https://github.com/vtendero" target="_blank">
+              <i class="fab fa-github-alt"></i>
+              ·
+            </a>
+            <a class="social-media-item" href="mailto:tendero.valle@gmail.com" target="_blank">
+             <i class="fas fa-envelope"></i>
+            </a>
+          </div>
       </article>
-    </section>
+
 
     <!--FOOTER-->
     <footer class="footer">
@@ -108,7 +180,7 @@
           <a class="footer-link" href="#team">
             <li class="footer-link-item">EQUIPO</li>
           </a>
-          <a class="footer-link" href="#about-us">
+          <a class="footer-link" href="#about">
             <li class="footer-link-item">QUIÉNES SOMOS</li>
           </a>
           <a class="footer-link" href="./contact.html" target="_blank">
