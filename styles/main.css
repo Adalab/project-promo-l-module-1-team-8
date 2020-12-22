@@ -46,7 +46,6 @@
   height: 45px;
   opacity: 0.9;
   background-color: var(--corporate-color2);
-
 }
 
 .list {
@@ -122,7 +121,6 @@
   padding: 10px 10px 10px 10px;
   border: solid 5px rgba(0, 0, 0, 0.08);
 }
-
 
 /*TEAM*/
 ​ .team {
@@ -255,6 +253,9 @@
   margin: 15px 83px 0px;
   color: var(--corporate-color);
   size: 16px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
 }
 
 .social-media-item {
@@ -270,7 +271,6 @@
 .fas:hover {
   transform: scale(1.5);
 }
-
 
 /*FOOTER*/
 
@@ -345,11 +345,11 @@
   color: inherit;
 }
 
-.footer-link-item {
+.footer-link {
   padding: 1px;
 }
 
-.footer-link-item:hover {
+.footer-link:hover {
   background: var(--corporate-color);
   color: #ffffff;
   transform: scale(1.03);
