@@ -151,6 +151,7 @@ max-width: 1200px;
 
 .s-w {
   width: 320px;
+  flex-grow: 2;
 }
 
 .h3-sw {
