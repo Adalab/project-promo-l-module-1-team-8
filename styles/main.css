@@ -123,35 +123,30 @@
 }
 
 /*TEAM*/
-​ .team {
-  width: 320px;
-  padding: 30px 15px;
-  background-color: var(--background-color);
-}
 
 .team-title {
-  padding: 10px;
+  height: 45px;
   text-align: center;
   color: var(--corporate-color2);
   font-family: var(--rubikMedium);
   font-size: 24px;
-  line-height: 45px;
-  font-weight: lighter;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+​ .team_description {
+  background-color: var(--background-color);
 }
 
 .p-team {
   padding: 0px 15px 30px 15px;
   text-align: center;
-  background: var(--background-color);
+  /* background: var(--background-color); */
   color: var(--corporate-colorfont);
   font-family: var(--openSans);
   font-size: 16px;
   line-height: 1.5;
 }
-
-/*.resaltar {
-  font-weight: bold;
-}*/
 
 /*SKILLS*/
 .flipped-square {
@@ -167,9 +162,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: baseline;
-  width: auto;
-  padding: 30px 0px 20px;
+  padding: 30px 15px 45px;
   background-color: rgba(184, 184, 185, 0.2);
 }
 
@@ -180,10 +173,10 @@
 .h3-sw {
   font-family: var(--rubikMedium);
   font-size: 22px;
-  line-height: 45px;
+  line-height: 1.5;
   text-align: center;
   color: var(--corporate-color);
-  font-weight: lighter;
+  font-weight: 500;
 }
 
 .p-sw {
@@ -192,7 +185,7 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #54585a;
+  color: var(--corporate-colorfont);
 }
 
 /* ABOUT US */
