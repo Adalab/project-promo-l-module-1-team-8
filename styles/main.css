@@ -213,15 +213,14 @@
 }
 
 .social-media {
-  margin: 0 83px 45px;
+  margin: 0 68px 45px;
   color: var(--corporate-color);
   size: 16px;
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .social-media-item {
-  align-content: center;
   text-decoration: none;
   color: inherit;
 }
@@ -379,6 +378,7 @@
     margin-top: 0;
   }
 .img {
+  width: 205px;  
   margin: 0px;
 }
   .img_left {
@@ -412,21 +412,34 @@
   
   .social-media {
     width: 124px;
+    margin: 0;
   }
 
 }
 @media all and (min-width: 1200px) {
+  .container {
+    margin: 0 138px;  
+  }
+/* HEADER */
   .hero-picture {
     width: 100%;
     height: 550px;
     object-fit: contain;
     margin-top: 60px;
   }
-  .container {
-    margin: 0 138px;  
-  }
+/* SKILLS */
   .s-w {
     width: 439px;
   }
-
+  /* ABOUT */
+  .img {
+    width: 278px; 
+  }
+  .img_left {
+    margin: 0 45px 0 0;
+  }
+  .img_right {
+    margin: 0 0 0 45px; 
+  }
+  
 }
