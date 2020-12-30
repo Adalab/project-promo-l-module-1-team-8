@@ -474,15 +474,15 @@
 }
 
 .footer-copy {
-  transform: translate(-395px, 15px);
+  transform: translate(-520px, 15px);
 }
 
 .footer-logo {
-  transform: translate(-295px, -80px);
+  transform: translate(-420px, -80px);
 }
 
 .footer-menu {
-  transform: translateX(295px);
+  transform: translateX(420px);
 }
 
 }
