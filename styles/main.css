@@ -286,10 +286,7 @@
   margin: 30px 74px 0px;
 }
 
-.logo-adalab:hover {
-  transform: scale(1.2);
-  transition: 2s;
-}
+
 @media all and (min-width: 768px) {
   .container {
     margin: 0 45px;
@@ -411,24 +408,36 @@
 
   /*FOOTER*/
   .footer {
-    display: flex;
     height: 170px;
-    padding: 45px 45px 60px;
+    display: flex;
+    padding: 24px 45px 56px;
     align-content: center;
   }
 
   .footer-copy {
-    transform: translate(-270px);
-    margin: 0;
+    transform: translate(-270px, 15px);
+    margin:0;
   }
 
   .footer-logo {
-    transform: translate(-170px, -90px);
+    transform: translate(-170px, -80px);
     margin: 15px 238.1px 45px 0;
   }
 
   .logo-adalab {
+    margin:15px;
+  }
+
+  .footer-menu {
+    width: 324px;
+    height: 90px;
     margin: 0;
+    display: flex;
+    flex-direction:column;
+    text-align: right;
+    align-content:center;
+    justify-content: space-evenly;
+    transform: translateX(172px);
   }
 
   .footer-menu {
