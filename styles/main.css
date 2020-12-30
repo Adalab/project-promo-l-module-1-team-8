@@ -467,6 +467,14 @@
     margin: 0 0 0 45px;
   }
 
+  .h2-about {
+    margin: 0 365.5px 41px;
+  }
+
+  .about-article {
+    width: 924px;
+   }
+
 /*FOOTER*/
 .footer {
   height: 161px;
