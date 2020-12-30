@@ -415,7 +415,42 @@
     margin: 0;
   }
 
+/*FOOTER*/
+.footer {
+  display: flex;
+  height: 170px;
+  padding: 45px 45px 60px;
+  align-content: center;
 }
+
+.footer-copy {
+  transform: translate(-270px);
+  margin: 0;
+}
+
+.footer-logo {
+   transform: translate(-170px, -90px);
+   margin: 15px 238.1px 45px 0;
+}
+
+.logo-adalab {
+  margin:0;
+}
+
+.footer-menu {
+  width: 324px;
+  height: 90px;
+  margin:0;
+  padding: 0;
+  display: flex;
+  flex-direction:column;
+  text-align: right;
+  justify-content: space-between;
+  transform: translateX(180px);
+}
+
+}
+
 @media all and (min-width: 1200px) {
   .container {
     margin: 0 138px;  
