@@ -9,7 +9,7 @@
   --corporate-colorfont: #54585a;
 }
 .container {
-  background-color: pink;
+  /* background-color: pink; */
   margin: 0 15px;
 }
 
@@ -370,21 +370,26 @@
     width: 193px;
     margin: 0 242.5px 41px 243.5px;
   }
-  .about-article_left {
+  .about-article {
     width: 680px;
     display: grid;
+    margin-bottom: 60px;
   }
-  .about-article_right {
-    width: 680px;
-    display: grid;
+  .names-about {
+    margin-top: 0;
   }
+.img {
+  margin: 0px;
+}
   .img_left {
     grid-row: 1;
     grid-column: 1;
+    margin: 0 30px 0 0;
   }
   .img_right {
     grid-row: 1;
     grid-column: 2;
+    margin: 0 0 0 30px; 
   }
   .text-about_left {
     grid-row: 1;
@@ -393,8 +398,6 @@
     flex-direction: column;
     text-align: left;
     align-items: flex-start;
-    
-
   }
 
   .text-about_right {
@@ -405,13 +408,6 @@
     flex-direction: column;
     text-align: right;
     align-items: flex-end;
-    
-
-
-  }
-  .bio {
- 
- 
   }
   
   .social-media {
