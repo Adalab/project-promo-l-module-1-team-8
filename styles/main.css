@@ -8,6 +8,11 @@
   --background-color: #ffffff;
   --corporate-colorfont: #54585a;
 }
+.container {
+  background-color: pink;
+  margin: 0 15px;
+  max-width: 1200px;
+}
 
 /*HEADER*/
 
@@ -90,9 +95,6 @@
 }
 
 /*TEAM*/
-.main_team {
-  max-width: 1200px;
-}
 
 .team-title {
   height: 45px;
@@ -116,41 +118,40 @@
   font-size: 16px;
   line-height: 1.5;
 }
-
 /*SKILLS*/
+.skills {
+  padding: 0 0 45px;
+  background-color: rgba(184, 184, 185, 0.2);
+}
+.both_s-w {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .flipped-square {
   width: 30px;
   height: 30px;
   position: absolute;
-  margin: -45px 0 0 0;
+  margin:  -15px;
   transform: rotate(45deg);
   background-color: var(--background-color);
 }
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 30px 15px 45px;
-  background-color: rgba(184, 184, 185, 0.2);
-}
-
 .s-w {
-  width: 320px;
-  flex-grow: 2;
+  width: 290px;
+  justify-content: center;
 }
 
 .h3-sw {
   font-family: var(--rubikMedium);
   font-size: 22px;
-  line-height: 1.5;
+  line-height: 2.05;
   text-align: center;
   color: var(--corporate-color);
   font-weight: 500;
+  margin: 30px 0 0;
 }
 
 .p-sw {
-  padding: 15px;
   font-family: var(--openSans);
   font-size: 16px;
   line-height: 1.5;
@@ -301,6 +302,10 @@
   transition: 2s;
 }
 @media all and (min-width: 678px) {
+  .container {
+    margin: 0 45px;
+  }
+
   .header {
     flex-direction: row;
     justify-content: space-between;
@@ -349,6 +354,21 @@
     padding: 15px 30px;
     text-align: left;
   }
+  
+  /* SKILLS */
+  .s-w {
+    width: 324px;
+  }
+  .h3-sw {
+    height: 45px;
+    line-height: 2.05;
+    margin: 45px 0 15px;
+  }
+  .p-sw {
+    margin: 0 0 15px;
+  }
+
+
 }
 @media all and (min-width: 924px) {
   .hero-picture {
@@ -357,4 +377,11 @@
     object-fit: contain;
     margin-top: 60px;
   }
+  .container {
+    margin: 0 138px;  
+  }
+  .s-w {
+    width: 439px;
+  }
+
 }
