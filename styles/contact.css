@@ -1,6 +1,184 @@
-/*HEADER*/
+/*VARIABLES*/
 
+:root {
+    --openSans: "Open Sans", sans-serif;
+    --rubikMedium: "Rubik", sans-serif;
+    --corporate-color: #099d8d;
+    --corporate-color2: #14d9c4;
+    --background-color: #ffffff;
+    --corporate-colorfont: #54585a;
+}
+
+/*HEADER*/
+.header {
+    width: 100%;
+    opacity: 0.95;
+    position: fixed;
+    top: 0;
+    background-color: var(--corporate-color);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    flex-direction: column;
+}
+
+.logo {
+    width: 160px;
+    margin: 10px 0;
+}
+
+.nav {
+    width: 100vw;
+    height: 45px;
+    opacity: 0.9;
+    background-color: var(--corporate-color2);
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    padding: 8px 17px 7px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    justify-content: space-around;
+    line-height: 2;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: var(--rubikMedium);
+    font-size: 15px;
+    color: var(--background-color);
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: var(--background-color);
+    background-color: var(--corporate-color);
+    transform: scale(1.03);
+    transition: 0.3s;
+    padding: 5px;
+    border-radius: 5px;
+}
 
 
 /*CONTACT*/
 
+
+/*FOOTER*/
+
+.footer {
+    width: 100%;
+    height: 250px;
+    padding: 30px 74px 45px;
+    border-top: solid 1px #b8b8b9;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: var(--openSans);
+    font-size: 14px;
+    line-height: 1.43px;
+    box-sizing: border-box;
+}
+
+.footer-copy {
+    width: 172px;
+    height: 20px;
+    margin: 0 0 20px;
+    color: #b8b8b9;
+}
+
+.footer-menu {
+    width: 114px;
+    height: 50px;
+    margin: 20px 29px 30px;
+    opacity: 0.75;
+    font-weight: 600;
+    line-height: 1.43;
+    color: var(--corporate-colorfont);
+    list-style-type: none;
+    display: inline;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-link:hover {
+    color: var(--corporate-color2);
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.logo-adalab {
+    width: 115.9px;
+    height: 45px;
+    margin: 30px 74px 0px;
+}
+
+
+@media all and (min-width: 768px) {
+
+    /*FOOTER*/
+    .footer {
+        height: 170px;
+        display: flex;
+        padding: 24px 45px 56px;
+        align-content: center;
+    }
+
+    .footer-copy {
+        transform: translate(-270px, 15px);
+        margin: 0;
+    }
+
+    .footer-logo {
+        transform: translate(-170px, -80px);
+        margin: 15px 238.1px 45px 0;
+    }
+
+    .logo-adalab {
+        margin: 15px;
+    }
+
+    .footer-menu {
+        width: 324px;
+        height: 90px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        align-content: center;
+        justify-content: space-evenly;
+        transform: translateX(172px);
+        }
+}
+
+@media all and (min-width: 1200px) {
+
+    /*FOOTER*/
+    .footer {
+        height: 161px;
+        padding: 24px 138px 47px;
+    }
+
+    .footer-copy {
+        transform: translate(-520px, 15px);
+    }
+
+    .footer-logo {
+        transform: translate(-420px, -80px);
+    }
+
+    .footer-menu {
+        transform: translateX(420px);
+    }
+
+}
