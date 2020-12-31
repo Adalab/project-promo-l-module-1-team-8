@@ -94,6 +94,11 @@
 
 /*TEAM*/
 
+.teamid {
+  position: relative;
+  top: -120px;
+}
+
 .team-title {
   height: 45px;
   text-align: center;
@@ -284,10 +289,10 @@
   margin: 30px 74px 0px;
 }
 
-
 @media all and (min-width: 768px) {
   .container {
     margin: 0 45px;
+    width: auto;
   }
 
   .header {
@@ -414,7 +419,7 @@
 
   .footer-copy {
     transform: translate(-270px, 15px);
-    margin:0;
+    margin: 0;
   }
 
   .footer-logo {
@@ -423,7 +428,7 @@
   }
 
   .logo-adalab {
-    margin:15px;
+    margin: 15px;
   }
 
   .footer-menu {
@@ -431,9 +436,9 @@
     height: 90px;
     margin: 0;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     text-align: right;
-    align-content:center;
+    align-content: center;
     justify-content: space-evenly;
     transform: translateX(172px);
   }
@@ -443,6 +448,11 @@
   .container {
     margin: 0 138px;
   }
+
+  .container .nav {
+    margin: 0 138px 0 0;
+  }
+
   /* HEADER */
   .hero-picture {
     width: 100%;
@@ -471,7 +481,7 @@
 
   .about-article {
     width: 924px;
-   }
+  }
 
   /*FOOTER*/
   .footer {
@@ -487,8 +497,7 @@
     transform: translate(-420px, -80px);
   }
 
-.footer-menu {
-  transform: translateX(420px);
+  .footer-menu {
+    transform: translateX(420px);
   }
-
 }
