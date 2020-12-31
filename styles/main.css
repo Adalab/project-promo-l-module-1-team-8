@@ -276,8 +276,6 @@
 
 .footer-link:hover {
   color: var(--corporate-color2);
-  transform: scale(1.03);
-  transition: 0.3s;
 }
 
 .logo-adalab {

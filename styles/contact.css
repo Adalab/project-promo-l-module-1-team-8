@@ -9,6 +9,10 @@
     --corporate-colorfont: #54585a;
 }
 
+.container {
+    margin: 0 15px;
+}
+
 /*HEADER*/
 .header {
     width: 100%;
@@ -83,6 +87,8 @@
     font-size: 14px;
     line-height: 1.43px;
     box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
 }
 
 .footer-copy {
@@ -113,8 +119,6 @@
 
 .footer-link:hover {
     color: var(--corporate-color2);
-    transform: scale(1.03);
-    transition: 0.3s;
 }
 
 .logo-adalab {
@@ -125,6 +129,36 @@
 
 
 @media all and (min-width: 768px) {
+    .container {
+         margin: 0 45px;
+    }
+
+    .header {
+         flex-direction: row;
+         justify-content: space-between;
+         height: 80px;
+    }
+
+    .nav {
+         background-color: var(--corporate-color);
+    }
+
+    .list {
+         justify-content: center;
+    }
+
+    .nav-link {
+         padding: 14px 18px 15px;
+    }
+
+    .nav-link:hover {
+         color: var(--corporate-colorfont);
+         background-color: white;
+         transform: scale(1.03);
+         transition: 0.3s;
+         border-radius: 5px;
+    }
+
 
     /*FOOTER*/
     .footer {
@@ -162,6 +196,9 @@
 }
 
 @media all and (min-width: 1200px) {
+    .container {
+        margin: 0 138px;
+    }
 
     /*FOOTER*/
     .footer {
