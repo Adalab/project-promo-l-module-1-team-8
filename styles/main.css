@@ -242,8 +242,7 @@
   height: 250px;
   padding: 30px 74px 45px;
   border-top: solid 1px #b8b8b9;
-  /* background-color: var(--background-color); */
-  background-color: lawngreen;
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
