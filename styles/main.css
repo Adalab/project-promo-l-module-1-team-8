@@ -237,7 +237,6 @@
 /*FOOTER*/
 
 .footer {
-  
   width: 100%;
   height: 250px;
   padding: 30px 74px 45px;
@@ -416,7 +415,6 @@
     display: flex;
     padding: 24px 45px 56px;
     align-content: center;
-
   }
 
   .footer-copy {
