@@ -9,7 +9,7 @@
   --corporate-colorfont: #54585a;
 }
 .container {
-  /* background-color: pink; */
+  background-color: pink;
   margin: 0 15px;
 }
 
@@ -106,7 +106,7 @@
   color: var(--corporate-color2);
   font-family: var(--rubikMedium);
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 1.88;
   font-weight: 500;
   margin: 30px 0 15px;
 }
@@ -340,6 +340,12 @@
     padding: 15px 30px;
     text-align: left;
   }
+/* TEAM */
+
+.team-title {
+  margin: 45px 0 15px;
+}
+
 
   /* SKILLS */
   .s-w {
@@ -462,6 +468,18 @@
     object-fit: contain;
     margin-top: 60px;
   }
+  /* TEAM */
+  
+  .p-team {
+    margin-bottom: 60px;
+    width: 671px;
+  }
+  .team_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   /* SKILLS */
   .s-w {
     width: 439px;
