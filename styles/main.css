@@ -471,13 +471,13 @@
   /* TEAM */
   
   .p-team {
-    margin-bottom: 60px;
     width: 671px;
   }
   .team_description {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
   }
 
   /* SKILLS */
