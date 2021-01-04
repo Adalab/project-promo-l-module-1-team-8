@@ -79,6 +79,14 @@
   width: 100%;
   border: solid 5px rgba(0, 0, 0, 0.08);
 }
+.contact_hero {
+  height: 400px;
+  background: url(../images/wobbly-mobile-pk.gif) center bottom no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  top: 40%;
+}
 
 .mottoText {
   background-color: var(--background-color);
