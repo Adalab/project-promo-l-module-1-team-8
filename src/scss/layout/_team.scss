@@ -1,0 +1,103 @@
+.teamid {
+    position: relative;
+    top: -120px;
+  }
+  
+  .team-title {
+    height: 45px;
+    text-align: center;
+    color: var(--corporate-color2);
+    font-family: var(--rubikMedium);
+    font-size: 24px;
+    line-height: 1.88;
+    font-weight: 500;
+    margin: 0 0 15px;
+  }
+  
+  ​ .team_description {
+    background-color: var(--background-color);
+  }
+  
+  .p-team {
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--corporate-colorfont);
+    font-family: var(--openSans);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .skills {
+    padding: 0 0 45px;
+    background-color: rgba(184, 184, 185, 0.2);
+  }
+  .both_s-w {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .flipped-square {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: -15px;
+    transform: rotate(45deg);
+    background-color: var(--background-color);
+  }
+  .s-w {
+    width: 290px;
+    justify-content: center;
+  }
+  
+  .h3-sw {
+    font-family: var(--rubikMedium);
+    font-size: 22px;
+    line-height: 2.05;
+    text-align: center;
+    color: var(--corporate-color);
+    font-weight: 500;
+    margin: 30px 0 0;
+  }
+  
+  .p-sw {
+    font-family: var(--openSans);
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--corporate-colorfont);
+  }
+  
+  @media all and (min-width: 768px){
+  .team-title {
+    margin: 0 0 15px;
+  }
+
+
+  .s-w {
+    width: 324px;
+  }
+  .h3-sw {
+    height: 45px;
+    line-height: 2.05;
+    margin: 45px 0 15px;
+  }
+  .p-sw {
+    margin: 0 0 15px;
+  }
+}
+@media all and (min-width: 1200px) {
+
+    .p-team {
+      width: 671px;
+    }
+    .team_description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+      
+    .s-w {
+      width: 439px;
+    }
+}
