@@ -24,10 +24,10 @@
     border-radius: 4px;
     border: solid 5px rgba(0, 0, 0, 0.08);
   }
-  .about__img--static {
+  .static {
     position: absolute;
   }
-  .about__img--static:hover {
+  .static:hover {
     opacity: 0;
   }
   .about__article {
@@ -90,7 +90,7 @@
     margin-top: 0;
   }
   .about__img {
-    width: 205px;
+    width: 210px;
     margin: 0px;
   }
   .about__img--left {
@@ -131,7 +131,7 @@
 
 @media all and (min-width:1200px){
 .about__img {
-    width: 278px;
+    width: 283px;
   }
   .about__img--left {
     margin: 0 45px 0 0;
