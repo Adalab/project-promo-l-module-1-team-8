@@ -11,19 +11,19 @@
   flex-direction: column;
 }
 
-.logo {
+.header__logo {
   width: 160px;
   margin: 10px 0;
 }
 
-.nav {
-  width: 100vw;
+.header__nav {
+  width: 100%;
   height: 45px;
   opacity: 0.9;
   background-color: var(--corporate-color2);
 }
 
-.list {
+.nav__list {
   display: flex;
   list-style-type: none;
   padding: 8px 17px 7px 16px;
@@ -33,7 +33,7 @@
   line-height: 2;
 }
 
-.nav-link {
+.nav__list--link {
   text-decoration: none;
   font-family: var(--rubikMedium);
   font-size: 15px;
@@ -41,7 +41,7 @@
   text-transform: uppercase;
 }
 
-.nav-link:hover {
+.nav__list--link:hover {
   color: var(--background-color);
   background-color: var(--corporate-color);
   transform: scale(1.03);
@@ -50,12 +50,11 @@
   border-radius: 5px;
 }
 
-
-.hero {
+.header__hero {
   width: 100%;
 }
 
-.hero-picture {
+.header__hero--picture {
   margin-top: 80px;
   width: 100%;
   border: solid 5px rgba(0, 0, 0, 0.08);
@@ -69,7 +68,7 @@
   top: 40%;
 }
 
-.mottoText {
+.header__hero--mottoText {
   background-color: var(--background-color);
   transform: translateY(-50%);
   flex-grow: 1;
@@ -82,58 +81,58 @@
   font-size: 18px;
   font-weight: 600;
 }
-@media all and (min-width: 768px){
-.header {
-  flex-direction: row;
-  justify-content: space-between;
-  height: 80px;
-}
+@media all and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+  }
 
-.nav {
-  background-color: var(--corporate-color);
-}
+  .header__nav {
+    background-color: var(--corporate-color);
+  }
 
-.list {
-  justify-content: center;
-}
+  .nav__list {
+    justify-content: center;
+    float: right;
+  }
 
-.nav-link {
-  padding: 14px 18px 15px;
-}
+  .nav__list--link {
+    padding: 14px 18px 15px;
+  }
 
-.nav-link:hover {
-  color: var(--corporate-colorfont);
-  background-color: white;
-  transform: scale(1.03);
-  transition: 0.3s;
-  border-radius: 5px;
-}
+  .nav__list--link:hover {
+    color: var(--corporate-colorfont);
+    background-color: white;
+    transform: scale(1.03);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
 
-.hero-picture {
-  width: 100%;
-  height: 421px;
-  object-fit: cover;
-  margin-top: 60px;
-}
+  .header__hero--picture {
+    width: 100%;
+    height: 421px;
+    object-fit: cover;
+    margin-top: 60px;
+  }
 
-.mottoText {
-  transform: translateY(-105%);
-  width: 441px;
-  height: 80px;
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 18px;
-  font-weight: 600;
-  padding: 15px 30px;
-  text-align: left;
-}
+  .header__hero--mottoText {
+    transform: translateY(-105%);
+    width: 441px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px;
+    text-align: left;
+  }
 }
 @media all and (min-width: 1200px) {
-
-  .container .nav {
+  .container .header__nav {
     margin: 0 138px 0 0;
   }
 
-  .hero-picture {
+  .header__hero--picture {
     width: 100%;
     height: 550px;
     object-fit: contain;
