@@ -68,26 +68,26 @@
   }
   
   @media all and (min-width: 768px){
-  .team-title {
+  .team_title {
     margin: 0 0 15px;
   }
 
 
-  .s-w {
+  .team_skills_s_w {
     width: 324px;
   }
-  .h3-sw {
+  .team_h3_sw {
     height: 45px;
     line-height: 2.05;
     margin: 45px 0 15px;
   }
-  .p-sw {
+  .team_skills_p_sw {
     margin: 0 0 15px;
   }
 }
 @media all and (min-width: 1200px) {
 
-    .p-team {
+    .team_p {
       width: 671px;
     }
     .team_description {
@@ -97,7 +97,7 @@
       margin-bottom: 30px;
     }
       
-    .s-w {
+    .team_skills_s_w {
       width: 439px;
     }
 }
