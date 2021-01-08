@@ -1,9 +1,9 @@
-.team_id {
+.team__id {
     position: relative;
     top: -120px;
   }
   
-  .team_title {
+  .team__title {
     height: 45px;
     text-align: center;
     color: var(--corporate-color2);
@@ -14,11 +14,11 @@
     margin: 0 0 15px;
   }
   
-  ​ .team_description {
+  ​ .team__description {
     background-color: var(--background-color);
   }
   
-  .team_p {
+  .team__p {
     margin-bottom: 30px;
     text-align: center;
     color: var(--corporate-colorfont);
@@ -27,16 +27,16 @@
     line-height: 1.5;
   }
   
-  .team_skills {
+  .team__skills {
     padding: 0 0 45px;
     background-color: rgba(184, 184, 185, 0.2);
   }
-  .team_both_skills {
+  .team__bothSkills {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .team_skills_flipped_square {
+  .team__skills--flippedSquare {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -44,12 +44,12 @@
     transform: rotate(45deg);
     background-color: var(--background-color);
   }
-  .team_skills_s_w {
+  .team__skills--sw {
     width: 290px;
     justify-content: center;
   }
   
-  .team_h3_sw {
+  .team__h3--sw {
     font-family: var(--rubikMedium);
     font-size: 22px;
     line-height: 2.05;
@@ -59,7 +59,7 @@
     margin: 30px 0 0;
   }
   
-  .team_skills_p_sw {
+  .team__skills--pSW {
     font-family: var(--openSans);
     font-size: 16px;
     line-height: 1.5;
@@ -68,36 +68,36 @@
   }
   
   @media all and (min-width: 768px){
-  .team_title {
+  .team__title {
     margin: 0 0 15px;
   }
 
 
-  .team_skills_s_w {
+  .team__skills--sw {
     width: 324px;
   }
-  .team_h3_sw {
+  .team__h3--sw {
     height: 45px;
     line-height: 2.05;
     margin: 45px 0 15px;
   }
-  .team_skills_p_sw {
+  .team__skills--pSW {
     margin: 0 0 15px;
   }
 }
 @media all and (min-width: 1200px) {
 
-    .team_p {
+    .team__p {
       width: 671px;
     }
-    .team_description {
+    .team__description {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: 30px;
     }
       
-    .team_skills_s_w {
+    .team__skills--sw {
       width: 439px;
     }
 }
