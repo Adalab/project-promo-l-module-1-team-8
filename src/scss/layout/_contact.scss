@@ -6,7 +6,42 @@
     align-items: flex-end;
     top: 40%;
   }
-
   input {
       display: block;
+  }
+
+  .contact__title {
+    margin: 30px 0 15px;
+    height: 45px;
+    font-family: var(--rubikMedium);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.88;
+    text-align: center;
+    color: var(--corporate-color);
+    text-transform: uppercase;
+  }
+  .contact__text {
+
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 58px;
+    font-family: var(--openSans);
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #54585a;
+  }
+  .contact__notice {
+    width: 290px;
+   
+  }
+  .contact__small {
+    font-size: 12px;
+
+  }
+  .star {
+      color: var(--corporate-color2);
   }

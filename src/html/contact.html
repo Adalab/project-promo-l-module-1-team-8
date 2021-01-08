@@ -47,16 +47,20 @@
         </section>
         <!--CONTACT-->
        <main>
-         
+        <h2 class="contact__title">Contacto</h2>
+         <div class="contact__text">
+              <p class="contact__notice">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et itaque fuga quam enim eligendi veritatis culpa veniam nulla at voluptatibus labore quidem reprehenderit nihil modi quas voluptate, mollitia explicabo sequi.</p>
+           <small class="contact__small">Todos los campos marcados con <span class="star">*</span> son obligatorios.</small>
+         </div>
+
         <form action="/signup" method="post">
-          <label for="firstName">Nombre completo *</label>
+          <label for="firstName">Nombre completo <span class="star">*</span></label>
           <input placeholder="Nombre..." id="firstName" type="text" name="firstName" required/>
-          <label for="emailAddress">Email *</label>
+          <label for="emailAddress">Email <span class="star">*</span></label>
           <input placeholder="example@mail.com" type="email" id="emailAddress" name="emailAddress" required/>
           <label for="telephone">Teléfono</label>
           <input placeholder="Ej: 123456789" type="tel" id="telephone" name="telephone" />
-          <label for="comments">Mensaje:</label>
-
+          <label for="comments">Mensaje<span class="star">*</span></label>
           <textarea  id="comments" name="comments" rows="8" cols="80" placeholder="¿Qué necesitas?" required></textarea>
 
           
