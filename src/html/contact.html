@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +12,7 @@
     <title>BEcodeTIFUL Contact</title>
 </head>
 
-<body>
-    <main>
-
-        
+<body>       
         <header class="header">
             <div class="container">
               <a href="./index.html" title="home">
@@ -50,9 +46,23 @@
         <section class="header__contact--hero">
         </section>
         <!--CONTACT-->
-       
-        <div></div>
-        <div></div>
+       <main>
+         
+        <form action="/signup" method="post">
+          <label for="firstName">Nombre completo *</label>
+          <input placeholder="Nombre..." id="firstName" type="text" name="firstName" required/>
+          <label for="emailAddress">Email *</label>
+          <input placeholder="example@mail.com" type="email" id="emailAddress" name="emailAddress" required/>
+          <label for="telephone">Teléfono</label>
+          <input placeholder="Ej: 123456789" type="tel" id="telephone" name="telephone" />
+          <label for="comments">Mensaje:</label>
+
+          <textarea  id="comments" name="comments" rows="8" cols="80" placeholder="¿Qué necesitas?" required></textarea>
+
+          
+        
+          <input type="submit" value="ENVIAR" />
+        </form>
 
 
     </main>
