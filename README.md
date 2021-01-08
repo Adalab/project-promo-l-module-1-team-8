@@ -17,7 +17,8 @@
         
 ---   
 
-We are pleased to show you the result of our first group project carried out during the course at [Adalab](https://adalab.es).
+We are pleased to show you the result of our first group project carried out during the course at [Adalab](https://adalab.es).  
+
 With this website, a truly be&lt;code&gt;tiful team introduces itself to the world of development.
 
 
