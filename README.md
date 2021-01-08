@@ -14,6 +14,8 @@
         
 ---   
 
+We are pleased to show you the result of our first group project carried out during the course at Adalab. 
+With this website, a truly be<code>tiful team introduces itself to the world of development.
 
 
 
