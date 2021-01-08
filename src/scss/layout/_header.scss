@@ -63,7 +63,6 @@
 .header__hero--mottoText {
   background-color: var(--background-color);
   transform: translateY(-50%);
-  flex-grow: 1;
   font-family: var(--openSans);
   border: solid 5px rgba(0, 0, 0, 0.08);
   height: 80px;
@@ -72,8 +71,14 @@
   text-align: center;
   font-size: 18px;
   font-weight: 600;
+  margin: 0 15px 0;
 }
+
 @media all and (min-width: 768px) {
+  .container-header {
+    margin: 0 12% 0;
+  }
+
   .header {
     flex-direction: row;
     justify-content: space-between;
@@ -119,9 +124,10 @@
     text-align: left;
   }
 }
+
 @media all and (min-width: 1200px) {
   .container-header {
-    margin: 0 12% 0;
+    margin: 0 13% 0;
   }
 
   .header__hero--picture {
@@ -129,5 +135,11 @@
     height: 550px;
     object-fit: contain;
     margin-top: 60px;
+  }
+}
+
+@media all and (min-width: 1700px) {
+  .header__hero--mottoText {
+    margin: 0 25% 0;
   }
 }
