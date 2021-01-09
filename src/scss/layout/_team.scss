@@ -68,7 +68,11 @@
 
 @media all and (min-width: 768px) {
   .team__title {
-    margin: 0 0 15px;
+    margin: -30px 0 15px;
+  }
+
+  .team__description {
+    margin-bottom: 54px;
   }
 
   .team__skills--sw {
