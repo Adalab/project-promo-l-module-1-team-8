@@ -1,5 +1,5 @@
 .container {
-  /* background-color: pink; */
+  // background-color: cyan; 
   margin: 0 15px;
 }
 
@@ -7,5 +7,13 @@
   .container {
     margin: 0 45px;
     width: auto;
+    background-color: pink;
   }
 }
+  @media all and (min-width: 1200px) {
+    .container {
+      margin: 0 138px;
+      width: auto;
+      background-color: pink;
+    }
+  }

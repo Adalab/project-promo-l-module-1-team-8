@@ -6,9 +6,10 @@
   align-items: flex-end;
   top: 40%;
 }
-
-input {
-  display: block;
+.main__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact__title {
@@ -24,28 +25,32 @@ input {
 }
 
 .contact__text {
-  display: flex;
-  flex-direction: column;
   margin: 0 0 58px;
   font-family: var(--openSans);
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
   color: #54585a;
+  text-align: center;
 }
 
 .contact__notice {
   width: 290px;
-  align-self: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
-
 .contact__small {
   font-size: 12px;
-  margin-top: 12px;
 }
-
 .star {
   color: var(--corporate-color2);
+}
+
+input {
+  display: block;
+  height: 45px;
+  padding: 11px 15px 15px;
+  margin: 7px 0 13px;
+  border: solid 1px var(--cool-grey);
 }
 
 .form__container {
@@ -55,7 +60,12 @@ input {
   font-family: var(--openSans);
   font-size: 14px;
   color: #54585a;
-  margin: auto;
+  
+}
+
+.comments-box {
+  height: 105px;
+  padding: 11px 15px 75px 15px;
 }
 
 .form__button {
