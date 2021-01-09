@@ -47,3 +47,22 @@ input {
 .star {
   color: var(--corporate-color2);
 }
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  font-family: var(--openSans);
+  font-size: 14px;
+  color: #54585a;
+  margin: auto;
+}
+
+.form__button {
+  width: 290px;
+  height: 45px;
+  margin: 30px 0 72px;
+  border-radius: 4px;
+  background-color: var(--corporate-color);
+  color: white;
+}

@@ -53,9 +53,9 @@
            <small class="contact__small">Todos los campos marcados con <span class="star">*</span> son obligatorios.</small>
          </div>
 
-        <form action="/signup" method="post">
-          <label for="firstName">Nombre completo <span class="star">*</span></label>
-          <input placeholder="Nombre..." id="firstName" type="text" name="firstName" required/>
+        <form class="form__container" action="/signup" method="post">
+          <div><label for="firstName">Nombre completo <span class="star">*</span></label>
+          <input placeholder="Nombre..." id="firstName" type="text" name="firstName" required/></div>
           <label for="emailAddress">Email <span class="star">*</span></label>
           <input placeholder="example@mail.com" type="email" id="emailAddress" name="emailAddress" required/>
           <label for="telephone">Teléfono</label>
@@ -65,7 +65,7 @@
 
           
         
-          <input type="submit" value="ENVIAR" />
+          <input class="form__button" type="submit" value="ENVIAR" />
         </form>
 
 
