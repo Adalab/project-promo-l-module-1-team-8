@@ -64,7 +64,7 @@ input {
   
 }
 
-.comments-box {
+.comments {
   height: 105px;
   padding: 11px 15px 75px 15px;
 }
@@ -78,19 +78,15 @@ input {
   color: white;
 }
 @media all and (min-width:768px) {
-  .main__contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   
   .contact__text {
     margin: 0 0 58px;
-    padding: 0 15px 0;
+   
   }
 
   .contact__notice {
     width: 442px;
+    padding: 0 15px 0;
   }
   
   input {
@@ -109,3 +105,33 @@ input {
     align-self: flex-end;
   }
 }
+  @media all and (min-width:1200px) {  
+    .contact__title {
+      margin: 45px 0 15px;
+    }  
+    .contact__text {
+      margin: 0 0 58px;
+    }
+
+    .emailAddress {
+      width: 395px;
+    }
+    .telephone { 
+      width: 162px;
+    }
+
+    .contact__notice {
+      width: 601px;
+      padding: 0 30px 0;
+    }
+    
+    .form__container {
+      width: 601px;
+    }
+      
+    .form__button {
+      width: 278px;
+      margin: 30px 0 120px 0;
+    }
+
+  }
