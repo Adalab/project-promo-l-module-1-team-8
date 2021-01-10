@@ -16,18 +16,18 @@
 .contact__title {
   margin: 30px 0 15px;
   height: 45px;
-  font-family: var(--rubikMedium);
+  font-family: $rubikMedium;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.88;
   text-align: center;
-  color: var(--corporate-color);
+  color: $corporateColor;
   text-transform: uppercase;
 }
 
 .contact__text {
   margin: 0 0 58px;
-  font-family: var(--openSans);
+  font-family: $openSans;
   font-size: 16px;
   line-height: 1.5;
   color: #54585a;
@@ -43,7 +43,7 @@
   font-size: 12px;
 }
 .star {
-  color: var(--corporate-color2);
+  color: $corporateColor2;
 }
 
 input {
@@ -51,22 +51,26 @@ input {
   height: 45px;
   padding: 11px 15px 15px;
   margin: 7px 0 13px;
-  border: solid 1px var(--cool-grey);
+  border: solid 1px $coolGrey;
 }
 
 .form__container {
   display: flex;
   flex-direction: column;
   width: 290px;
-  font-family: var(--openSans);
+  font-family: $openSans;
   font-size: 14px;
   color: #54585a;
   
+}
+.inline {
+  width: 100%;
 }
 
 .comments {
   height: 105px;
   padding: 11px 15px 75px 15px;
+  color:$corporateColorfont;
 }
 
 .form__button {
@@ -74,14 +78,13 @@ input {
   height: 45px;
   margin: 30px 0 72px;
   border-radius: 4px;
-  background-color: var(--corporate-color);
-  color: white;
+  background-color: $corporateColor;
+  color:$backgroundColor;
 }
 @media all and (min-width:768px) {
   
   .contact__text {
     margin: 0 0 58px;
-   
   }
 
   .contact__notice {
@@ -106,6 +109,7 @@ input {
   }
 }
   @media all and (min-width:1200px) {  
+    
     .contact__title {
       margin: 45px 0 15px;
     }  
@@ -133,5 +137,10 @@ input {
       width: 278px;
       margin: 30px 0 120px 0;
     }
-
+    .form__container--inline {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
   }

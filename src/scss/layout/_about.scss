@@ -3,7 +3,7 @@
 }
 
 .about {
-  background-color: var(--background-color);
+  background-color: $backgroundColor;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -14,10 +14,10 @@
 .about__h2 {
   height: 45px;
   margin: 0 47.5px 30px 49.5px;
-  font-family: var(--rubikMedium);
+  font-family: $rubikMedium;
   font-size: 24px;
   text-align: center;
-  color: var(--corporate-color);
+  color: $corporateColor;
   font-weight: 500;
   line-height: 1.88;
 }
@@ -35,7 +35,7 @@
   opacity: 0;
 }
 .about__article {
-  font-family: var(--openSans);
+  font-family: $openSans;
   text-align: center;
   width: 290px;
 }
@@ -51,12 +51,12 @@
   margin-bottom: 15px;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--corporate-colorfont);
+  color: $corporateColorfont;
 }
 
 .about__socialmedia {
   margin: 0 68px 45px;
-  color: var(--corporate-color);
+  color: $corporateColor;
   size: 16px;
   list-style-type: none;
   display: flex;

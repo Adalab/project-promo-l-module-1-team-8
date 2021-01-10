@@ -60,10 +60,16 @@
               <form class="form__container" action="https://formspree.io/f/xyyblerj" method="post">
                 <label for="firstName">Nombre completo <span class="star">*</span></label>
                 <input class="firstName" placeholder="Nombre..." id="firstName" type="text" name="firstName" required>
-                <label for="emailAddress">Email <span class="star">*</span></label>
-                <input class="emailAddress" placeholder="example@mail.com" type="email" id="emailAddress" name="emailAddress" required/>
-                <label for="telephone">Teléfono</label>
-                <input class="telephone" placeholder="Ej: 123456789" type="tel" id="telephone" name="telephone" />
+                <div class="form__container--inline">
+                  <div>
+                    <label for="emailAddress">Email <span class="star">*</span></label>
+                    <input class="emailAddress inline" placeholder="example@mail.com" type="email" id="emailAddress" name="emailAddress" required/>
+                  </div>
+                  <div>
+                    <label for="telephone">Teléfono</label>
+                    <input class="telephone inline" placeholder="Ej: 123456789" type="tel" id="telephone" name="telephone" />
+                  </div>
+                </div>
                 <label for="comments">Mensaje<span class="star">*</span></label>
                 <input class="comments" placeholder="¿Qué necesitas?" id="comments" type="text" name="comments" required>
                             
