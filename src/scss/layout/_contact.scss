@@ -63,6 +63,6 @@ input {
   height: 45px;
   margin: 30px 0 72px;
   border-radius: 4px;
-  background-color: var(--corporate-color);
+  background-color: $corporateColor;
   color:$backgroundColor;
 }
