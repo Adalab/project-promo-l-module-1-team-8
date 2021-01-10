@@ -53,6 +53,14 @@ input {
   margin: 7px 0 13px;
   border: solid 1px $coolGrey;
 }
+::placeholder {
+  color: $coolGrey;
+  font-family: $openSans;
+}
+
+.emailAddress::placeholder {
+  color: $corporateColorfont;
+}
 
 .form__container {
   display: flex;
