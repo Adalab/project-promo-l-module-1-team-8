@@ -14,12 +14,12 @@ input {
 .contact__title {
   margin: 30px 0 15px;
   height: 45px;
-  font-family: var(--rubikMedium);
+  font-family: $rubikMedium;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.88;
   text-align: center;
-  color: var(--corporate-color);
+  color: $corporateColor;
   text-transform: uppercase;
 }
 
@@ -27,7 +27,7 @@ input {
   display: flex;
   flex-direction: column;
   margin: 0 0 58px;
-  font-family: var(--openSans);
+  font-family: $openSans;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
@@ -45,16 +45,16 @@ input {
 }
 
 .star {
-  color: var(--corporate-color2);
+  color: $corporateColor2;
 }
 
 .form__container {
   display: flex;
   flex-direction: column;
   width: 290px;
-  font-family: var(--openSans);
+  font-family: $openSans;
   font-size: 14px;
-  color: #54585a;
+  color:$corporateColorfont;
   margin: auto;
 }
 
@@ -64,5 +64,5 @@ input {
   margin: 30px 0 72px;
   border-radius: 4px;
   background-color: var(--corporate-color);
-  color: white;
+  color:$backgroundColor;
 }
