@@ -1,111 +1,108 @@
-
 .footer {
   width: 100%;
   height: 250px;
-  padding: 30px 74px 45px;
   border-top: solid 1px #b8b8b9;
-  background-color: var(--background-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  font-family: var(--openSans);
+  background-color: $backgroundColor;
+  display: grid;
+  grid-template-columns: 130px 130px;
+  grid-template-rows: 70px 60px 120px;
+  grid-column-gap: 30px;
+  font-family: $openSans;
   font-size: 14px;
-  line-height: 1.43px;
-  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
 }
 
 .footer__copy {
-  width: 172px;
-  height: 20px;
-  margin: 0 0 20px;
   color: #b8b8b9;
+  font-size: 14px;
+  grid-column: span 2;
+  margin: 30px 74px 0;
+}
+
+.footer__nav {
+  display: grid;
+  grid-column: span 2;
 }
 
 .nav__menu {
-  width: 114px;
-  height: 50px;
-  margin: 20px 29px 30px;
-  opacity: 0.75;
-  font-weight: 600;
-  line-height: 1.43;
-  color: var(--corporate-colorfont);
   list-style-type: none;
-  display: inline;
+  text-transform: uppercase;
 }
 
 .nav__menu--link {
   text-decoration: none;
-  color: inherit;
-  margin: 0;
-  padding: 0;
+  color: $corporateColorfont;
+  font-weight: 600;
+  opacity: 0.75;
+  line-height: 1.43;
+  padding: 10px;
+
+  &:hover {
+    color: $corporateColor2;
+  }
 }
 
-.nav__menu--link:hover {
-  color: var(--corporate-color2);
+.footer__logo {
+  grid-column: span 2;
+  margin: 30px 102px 45px 102px;
 }
 
 .logo__adalab {
   width: 115.9px;
 }
 
-@media all and (min-width: 768px){
-.logo__adalab {
-  width: 115.9px;
-  height: 45px;
-  margin: 30px 74px 0px;
-}
+@media all and (min-width: 768px) {
+  .footer {
+    height: 170px;
+    grid-template-columns: repeat(6, 88px);
+    grid-template-rows: 1fr 1fr;
+  }
 
-.footer {
-  height: 170px;
-  display: flex;
-  padding: 24px 45px 56px;
-  align-content: center;
-}
+  .footer__copy {
+    width: 172px;
+    height: 20px;
+    margin: 30px 0 15px 45px;
+    grid-column: 1;
+    grid-row: 1;
+  }
 
-.footer__copy {
-  transform: translate(-270px, 15px);
-  margin: 0;
-}
+  .footer__nav {
+    width: 324px;
+    height: 90px;
+    grid-column: 5;
+    grid-row: span 2;
+    text-align: right;
+    line-height: 2.14;
+    margin: 24px 45px 56px;
+  }
 
-.footer__logo {
-  transform: translate(-170px, -80px);
-  margin: 15px 238.1px 45px 0;
-}
+  .footer__logo {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0 0 60px 30px;
+  }
 
-.logo-adalab {
-  margin: 15px;
-}
+  @media all and (min-width: 1200px) {
+    .footer {
+      height: 161px;
+      grid-template-columns: repeat(6, 116.5px);
+      grid-template-rows: 1fr 1fr;
+      grid-column-gap: 45px;
+    }
 
-.nav__menu {
-  width: 324px;
-  height: 90px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-  align-content: center;
-  justify-content: space-evenly;
-  transform: translateX(172px);
-}
-}
+    .footer__copy {
+      text-align: left;
+      margin-left: 58px;
+    }
 
-@media all and (min-width: 1200px) {
-.footer {
-  height: 161px;
-  padding: 24px 138px 47px;
-}
+    .footer__nav {
+      grid-column-end: 7;
+    }
 
-.footer__copy {
-  transform: translate(-520px, 15px);
-}
-
-.footer__logo {
-  transform: translate(-420px, -80px);
-}
-
-.nav__menu {
-  transform: translateX(420px);
-}
+    .footer__logo {
+      margin-left: 0;
+    }
+  }
 }
