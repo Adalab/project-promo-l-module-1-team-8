@@ -3,7 +3,7 @@
   opacity: 0.95;
   position: fixed;
   top: 0;
-  background-color: var(--corporate-color);
+  background-color: $corporateColor;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -20,7 +20,7 @@
   width: 100%;
   height: 45px;
   opacity: 0.9;
-  background-color: var(--corporate-color2);
+  background-color: $corporateColor2;
 }
 
 .nav__list {
@@ -35,15 +35,15 @@
 
 .nav__list--link {
   text-decoration: none;
-  font-family: var(--rubikMedium);
+  font-family: $rubikMedium;
   font-size: 15px;
-  color: var(--background-color);
+  color: $backgroundColor;
   text-transform: uppercase;
 }
 
 .nav__list--link:hover {
-  color: var(--background-color);
-  background-color: var(--corporate-color);
+  color: $backgroundColor;
+  background-color: $corporateColor;
   transform: scale(1.03);
   transition: 0.3s;
   padding: 5px;
@@ -61,9 +61,9 @@
 }
 
 .header__hero--mottoText {
-  background-color: var(--background-color);
+  background-color: $backgroundColor;
   transform: translateY(-50%);
-  font-family: var(--openSans);
+  font-family: $openSans;
   border: solid 5px rgba(0, 0, 0, 0.08);
   height: 80px;
   width: 290px;
@@ -86,7 +86,7 @@
   }
 
   .header__nav {
-    background-color: var(--corporate-color);
+    background-color: $corporateColor;
   }
 
   .nav__list {
@@ -99,7 +99,7 @@
   }
 
   .nav__list--link:hover {
-    color: var(--corporate-colorfont);
+    color: $corporateColorfont;
     background-color: white;
     transform: scale(1.03);
     transition: 0.3s;

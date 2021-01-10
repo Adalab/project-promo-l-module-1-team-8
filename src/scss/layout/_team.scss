@@ -5,8 +5,8 @@
 .team__title {
   height: 45px;
   text-align: center;
-  color: var(--corporate-color2);
-  font-family: var(--rubikMedium);
+  color: $corporateColor2;
+  font-family: $rubikMedium;
   font-size: 24px;
   line-height: 1.88;
   font-weight: 500;
@@ -14,14 +14,14 @@
 }
 
 ​ .team__description {
-  background-color: var(--background-color);
+  background-color: $backgroundColor;
 }
 
 .team__p {
   margin-bottom: 30px;
   text-align: center;
-  color: var(--corporate-colorfont);
-  font-family: var(--openSans);
+  color: $corporateColorfont;
+  font-family: $openSans;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -41,7 +41,7 @@
   position: absolute;
   margin-top: -15px;
   transform: rotate(45deg);
-  background-color: var(--background-color);
+  background-color: $backgroundColor;
 }
 .team__skills--sw {
   width: 290px;
@@ -49,21 +49,21 @@
 }
 
 .team__h3--sw {
-  font-family: var(--rubikMedium);
+  font-family: $rubikMedium;
   font-size: 22px;
   line-height: 2.05;
   text-align: center;
-  color: var(--corporate-color);
+  color: $corporateColor;
   font-weight: 500;
   margin: 30px 0 0;
 }
 
 .team__skills--pSW {
-  font-family: var(--openSans);
+  font-family: $openSans;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: var(--corporate-colorfont);
+  color: $corporateColorfont;
 }
 
 @media all and (min-width: 768px) {
