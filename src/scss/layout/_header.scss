@@ -102,9 +102,10 @@
   .nav__list--link:hover {
     color: $corporateColorfont;
     background-color: white;
-    transform: scale(1.03);
-    transition: 0.3s;
+    transform: scale(1.1);
+    transition: all 0.6s;
     border-radius: 5px;
+    padding: 15px;
   }
 
   .header__hero--picture {
