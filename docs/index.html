@@ -16,7 +16,7 @@
 
   <body class="page">
     <header class="header">
-      <div class="container">
+      <div class="container-header">
         <a href="./index.html" title="home">
           <img
             class="header__logo"
@@ -25,94 +25,89 @@
           />
         </a>
       </div>
-      
+
       <nav class="header__nav">
-        <div class="container">
-        <ul class="nav__list">
-          <li>
-            <a class="nav__list--link" href="#team">equipo</a>
-          </li>
-          <li>
-            <a class="nav__list--link" href="#about">quienes somos</a>
-          </li>
-          <li>
-            <a class="nav__list--link" href="./contact.html" target="_blank"
-              >contacto</a
-            >
-          </li>
-        </ul>
+        <div class="container-header">
+          <ul class="nav__list">
+            <li>
+              <a class="nav__list--link" href="./index.html#team">equipo</a>
+            </li>
+            <li>
+              <a class="nav__list--link" href="./index.html#about">quienes somos</a>
+            </li>
+            <li>
+              <a class="nav__list--link" href="./contact.html" target="_blank"
+                >contacto</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
-      </div>
     </header>
     <section class="header__hero">
       <img class="header__hero--picture" src="./assets/images/4751532.jpg" />
-      <div class="container">
-        <div class="header__hero--motto"></div>
+      <div class="container-header">
         <h2 class="header__hero--mottoText">In code we trust</h2>
       </div>
     </section>
 
-     <!-- EQUIPO -->
-
-     <section class="main_team">
-        <span id="team" class="teamid"></span>
-        <div class="container">
-          <h2 class="team-title">EQUIPO</h2>
-          <div class="team_description">
-            <p class="p-team">
-              Un sabio dijo,
-              <b>"puedes programar por distintas rutas".</b> Venidas de diversas
-              zonas del planeta y a priori totalmente diferentes, se fueron dando
-              cuenta de que algunos de sus caminos confluían. Tomaron esas
-              convergencias como oportunidades para empezar a desarrollar un
-              sendero binario juntas.
-            </p>
-            <p class="p-team">
-              Con gran adaptación al cambio, orientación al cliente, trotamundos,
-              multidisciplinarias; son la nueva era de la programación front -
-              end, mujeres comprometidas con su equipo y proyectos, siempre en
-              busca de la optimización.
-            </p>
-          </div>
+    <section class="team__main">
+      <span id="team" class="team__id"></span>
+      <div class="container">
+        <h2 class="team__title">EQUIPO</h2>
+        <div class="team__description">
+          <p class="team__p">
+            Un sabio dijo,
+            <b>"puedes programar por distintas rutas".</b> Venidas de diversas zonas
+            del planeta y a priori totalmente diferentes, se fueron dando cuenta de
+            que algunos de sus caminos confluían. Tomaron esas convergencias como
+            oportunidades para empezar a desarrollar un sendero binario juntas.
+          </p>
+          <p class="team__p">
+            Con gran adaptación al cambio, orientación al cliente, trotamundos,
+            multidisciplinarias; son la nueva era de la programación front - end,
+            mujeres comprometidas con su equipo y proyectos, siempre en busca de la
+            optimización.
+          </p>
         </div>
+      </div>
 
-        <!-- SKILLS -->
-        <aside class="skills">
-          <div class="container">
-            <div class="both_s-w">
-              <span class="flipped-square"></span>
-              <div class="s-w">
-                <h3 class="h3-sw">Fortalezas</h3>
-                <p class="p-sw">
-                  Están aprendiendo las reglas del juego y parecen de interfaz
-                  tímida pero en el fondo son JavaTas. Son responsive, se adaptan
-                  a todos los entornos y trabajan bien en remoto. En equipo
-                  funcionan como una y crean código &lt;div&gt;ino.
-                </p>
-              </div>
-              <div class="s-w">
-                <h3 class="h3-sw">Debilidades</h3>
-                <p class="p-sw">
-                  El archiconocido síndrome del impostor. Su recién incorporación
-                  a la programación web les provoca algunas inseguridades y
-                  temores con los que tienen que lidiar constantemente, pero el
-                  trabajo diario consolida su resiliencia. Los obstáculos son el
-                  trampolín que les impulsa.
-                </p>
-              </div>
+      <aside class="team__skills">
+        <div class="team__skills--container">
+          <div class="team__bothSkills">
+            <span class="team__skills--flippedSquare"></span>
+            <div class="team__skills--sw">
+              <h3 class="team__h3--sw">Fortalezas</h3>
+              <p class="team__skills--pSW">
+                Están aprendiendo las reglas del juego y parecen de interfaz tímida
+                pero en el fondo son JavaTas. Son responsive, se adaptan a todos los
+                entornos y trabajan bien en remoto. En equipo funcionan como una y
+                crean código &lt;div&gt;ino.
+              </p>
+            </div>
+            <div class="team__skills--sw">
+              <h3 class="team__h3--sw">Debilidades</h3>
+              <p class="team__skills--pSW">
+                El archiconocido síndrome del impostor. Su recién incorporación a la
+                programación web les provoca algunas inseguridades y temores con los
+                que tienen que lidiar constantemente, pero el trabajo diario
+                consolida su resiliencia. Los obstáculos son el trampolín que les
+                impulsa.
+              </p>
             </div>
           </div>
-        </aside>
-      </section>
+        </div>
+      </aside>
+    </section>
 
     <section class="about">
-      <span id="about" class="teamid"></span>
+      <span id="about" class="about__id"></span>
       <div class="container">
         <h2 class="about__h2">QUIÉNES SOMOS</h2>
         <article class="about__article">
           <div class="about__img--left">
-            <img class="about__img static" src="./assets/images/yo-pk.jpg" /><img
-              class="about__img active"
+            <img class="about__img about-static" src="./assets/images/yo-pk.jpg" /><img
+              class="about__img"
               src="./assets/images/yo-gif-pk.gif"
             />
           </div>
@@ -171,10 +166,10 @@
         <article class="about__article">
           <div class="about__img--right">
             <img
-              class="about__img static"
+              class="about__img about-static"
               src="./assets/images/elisa-pk.jpg"
             /><img
-              class="about__img active"
+              class="about__img"
               src="./assets/images/elisa-gif-pk.gif"
             />
           </div>
@@ -233,8 +228,8 @@
 
         <article class="about__article">
           <div class="about__img--left">
-            <img class="about__img static" src="./assets/images/lili.jpg" /><img
-              class="about__img active"
+            <img class="about__img about-static" src="./assets/images/lili.jpg" /><img
+              class="about__img"
               src="./assets/images/lili-gif-pk.gif"
             />
           </div>
@@ -293,10 +288,10 @@
         <article class="about__article">
           <div class="about__img--right">
             <img
-              class="about__img static"
+              class="about__img about-static"
               src="./assets/images/valle-pk.jpg"
             /><img
-              class="about__img active"
+              class="about__img"
               src="./assets/images/valle-gif-pk.gif"
             />
           </div>
@@ -357,34 +352,27 @@
 
     <!--FOOTER-->
     <footer class="footer">
-        <p class="footer-copy">BEcodeTIFUL ©2020</p>
+      <p class="footer__copy">BEcodeTIFUL ©2021</p>
 
-        <nav class="footer-nav">
-          <ul class="footer-menu">
-            <li>
-              <a class="footer-link" href="#team">EQUIPO</a>
-            </li>
-            <li>
-              <a class="footer-link" href="#about">QUIÉNES SOMOS</a>
-            </li>
-            <li>
-              <a class="footer-link" href="./contact.html" target="_blank"
-                >CONTACTO</a
-              >
-            </li>
-          </ul>
-        </nav>
+      <nav class="footer__nav">
+        <ul class="nav__menu">
+          <li>
+            <a class="nav__menu--link" href="./index.html#team">Equipo</a>
+          </li>
+          <li>
+            <a class="nav__menu--link" href="./index.html#about">Quiénes somos</a>
+          </li>
+          <li>
+            <a class="nav__menu--link" href="./contact.html" target="_blank">Contacto</a>
+          </li>
+        </ul>
+      </nav>
 
-        <div class="footer-logo">
-          <a href="https://adalab.es/" target="_blank">
-            <img
-              class="logo-adalab"
-              src="./assets/images/logo-adalab.png"
-              alt="logo adalab home"
-            />
-          </a>
-        </div>
-      </footer>
-
+      <div class="footer__logo">
+        <a href="https://adalab.es/" target="_blank">
+          <img class="logo__adalab" src="./assets/images/logo-adalab.png" alt="logo adalab home" />
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
