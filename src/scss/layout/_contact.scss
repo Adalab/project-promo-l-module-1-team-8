@@ -88,6 +88,13 @@ input {
   border-radius: 4px;
   background-color: $corporateColor;
   color:$backgroundColor;
+  font-family: $rubikMedium;
+  cursor: pointer;
+  &:hover {
+    color: $corporateColor;
+    background-color: $backgroundColor;
+    border: 2px solid $corporateColor;
+  }
 }
 @media all and (min-width:768px) {
   
