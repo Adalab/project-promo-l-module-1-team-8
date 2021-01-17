@@ -12,97 +12,94 @@
   justify-content: center;
   text-align: center;
   justify-items: center;
-}
 
-.footer__copy {
-  color: #b8b8b9;
-  font-size: 14px;
-  grid-column: span 2;
-  margin: 30px 74px 0;
-}
-
-.footer__nav {
-  display: grid;
-  grid-column: span 2;
-}
-
-.nav__menu {
-  list-style-type: none;
-  text-transform: uppercase;
-}
-
-.nav__menu--link {
-  text-decoration: none;
-  color: $corporateColorfont;
-  font-weight: 600;
-  opacity: 0.75;
-  line-height: 1.43;
-  padding: 10px;
-
-  &:hover {
-    color: $corporateColor2;
-  }
-}
-
-.footer__logo {
-  grid-column: span 2;
-  margin: 30px 102px 45px 102px;
-}
-
-.logo__adalab {
-  width: 115.9px;
-}
-
-@media all and (min-width: 768px) {
-  .footer {
-    height: 170px;
-    grid-template-columns: repeat(6, 88px);
-    grid-template-rows: 1fr 1fr;
+    @include tablet {
+      height: 170px;
+      grid-template-columns: repeat(6, 88px);
+      grid-template-rows: 1fr 1fr;
   }
 
-  .footer__copy {
-    width: 172px;
-    height: 20px;
-    margin: 30px 0 15px 45px;
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .footer__nav {
-    width: 324px;
-    height: 90px;
-    grid-column: 5;
-    grid-row: span 2;
-    text-align: right;
-    line-height: 2.14;
-    margin: 24px 45px 56px;
-  }
-
-  .footer__logo {
-    grid-column: 1;
-    grid-row: 2;
-    margin: 0 0 60px 30px;
-  }
-
-  @media all and (min-width: 1200px) {
-    .footer {
+    @include desktop {
       height: 161px;
       grid-template-columns: repeat(6, 116.5px);
       grid-template-rows: 1fr 1fr;
       grid-column-gap: 45px;
     }
 
-    .footer__copy {
+  &__copy {
+    color: #b8b8b9;
+    font-size: 14px;
+    grid-column: span 2;
+    margin: 30px 74px 0;
+
+    @include tablet {
+      width: 172px;
+      height: 20px;
+      margin: 30px 0 15px 45px;
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    @include desktop {
       text-align: left;
       margin-left: 58px;
     }
+  }
 
-    .footer__nav {
-      grid-column-end: 7;
+  &__nav {
+    display: grid;
+    grid-column: span 2;
+
+    @include tablet {
+      width: 324px;
+      height: 90px;
+      grid-column: 5;
+      grid-row: span 2;
+      text-align: right;
+      line-height: 2.14;
+      margin: 24px 45px 56px;
     }
 
-    .footer__logo {
+    @include desktop {
+      grid-column-end: 7;
+      padding-right: 10px;
+    }
+  }
+}
+
+.nav__menu {
+  list-style-type: none;
+  text-transform: uppercase;
+
+  &--link {
+    text-decoration: none;
+    color: $corporateColorfont;
+    font-weight: 600;
+    opacity: 0.75;
+    line-height: 1.43;
+    padding: 10px;
+
+    &:hover {
+      color: $corporateColor2;
+    }
+  }
+}
+
+.footer__logo {
+  grid-column: span 2;
+  margin: 30px 102px 45px 102px;
+
+    @include tablet {
+      grid-column: 1;
+      grid-row: 2;
+      margin: 0 0 60px 30px;
+    }
+
+    @include desktop {
       margin-left: 0;
     }
+
+  &--item {
+    width: 115.9px;
   }
 }
