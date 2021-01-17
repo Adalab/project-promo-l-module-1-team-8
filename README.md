@@ -25,4 +25,4 @@ With this website, a truly be&lt;code&gt;tiful team introduces itself to the wor
 
 
 
-![](https://github.com/cvcastano/my-web/blob/master/images/logo_becodetiful.png)  
+![](https://github.com/Adalab/project-promo-l-module-1-team-8/blob/master/src/images/logo_readme.png)  
